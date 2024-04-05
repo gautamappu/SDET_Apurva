@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="2" name="Suite">
+  <test name="ChromeTest">
+	  <parameter name="browser" value="chrome"> <!-- this tells which browser to use-->
+		<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login">
+		</parameter>	  
+	  </parameter>
+    <classes>
+      <class name="Day12.parameterizationThroughXML"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="EdgeTest">
+	  <parameter name="browser" value="edge"> <!-- this tells which browser to use-->
+		 <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login">
+		</parameter>	 
+		   </parameter>
+    <classes>
+      <class name="Day12.parameterizationThroughXML"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
